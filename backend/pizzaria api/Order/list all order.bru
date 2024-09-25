@@ -1,0 +1,15 @@
+meta {
+  name: list all order
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3333/order/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2JyaWVsIEFtYXJhbCIsImVtYWlsIjoiZ2FhbWFyYWxAZ21haWwuY29tIiwiaWF0IjoxNzE1MDExMzk2LCJleHAiOjE3MTc2MDMzOTYsInN1YiI6IjNiZGMwYjc0LTA0ZjQtNGM4My1hNWQwLWQwNzg0MWU4ZDk0NiJ9.LV13IzHKnEwwd2wVuoTh7jvkGyuEyuNOav2xHBr5N1g
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Criar Category
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/category
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FicmllbCAgQW5kcmFkZSIsImVtYWlsIjoiZ2FhbWFyYWxwZXNzb2FsQGdtYWlsLmNvbSIsImlhdCI6MTcyNzI2NDA2NCwiZXhwIjoxNzI5ODU2MDY0LCJzdWIiOiIxNDA4YWQwNi0zMzlmLTQ3ZDUtYTJmMS03YzUxZjNhNGUzNWMifQ.RD-QAF1DsPumgoGioDreXjJI702nX009uUy3os73Nus
+}
+
+body:json {
+  {
+      "name": "Pizzas"
+  }
+}

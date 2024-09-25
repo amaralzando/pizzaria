@@ -1,0 +1,23 @@
+meta {
+  name: Cadastrar produto
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/product
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2JyaWVsIEFtYXJhbCIsImVtYWlsIjoiZ2FhbWFyYWxAZ21haWwuY29tIiwiaWF0IjoxNzE1MDExMzk2LCJleHAiOjE3MTc2MDMzOTYsInN1YiI6IjNiZGMwYjc0LTA0ZjQtNGM4My1hNWQwLWQwNzg0MWU4ZDk0NiJ9.LV13IzHKnEwwd2wVuoTh7jvkGyuEyuNOav2xHBr5N1g
+}
+
+body:multipart-form {
+  name: Pizza de Frango com catupiry
+  price: 45,90
+  description: Pizzaa de Frango gostosinha
+  file: @file(postman-cloud:///1ef0c86a-1ef4-4be0-a53b-4ee131bf248d)
+  category_id: 4e805b5f-7293-4e93-b6b9-76c28252c11c
+}

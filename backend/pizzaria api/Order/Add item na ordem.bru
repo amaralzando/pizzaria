@@ -1,0 +1,23 @@
+meta {
+  name: Add item na ordem
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/order/add
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2JyaWVsIEFtYXJhbCIsImVtYWlsIjoiZ2FhbWFyYWxAZ21haWwuY29tIiwiaWF0IjoxNzE1MDExMzk2LCJleHAiOjE3MTc2MDMzOTYsInN1YiI6IjNiZGMwYjc0LTA0ZjQtNGM4My1hNWQwLWQwNzg0MWU4ZDk0NiJ9.LV13IzHKnEwwd2wVuoTh7jvkGyuEyuNOav2xHBr5N1g
+}
+
+body:json {
+  {
+      "order_id": "4ed8b527-faf8-497f-b0df-07da61cfa561",
+      "product_id": "45555d12-ce37-47b6-875d-145a22e672ba",
+      "amount": 1
+  }
+}

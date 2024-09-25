@@ -1,0 +1,15 @@
+meta {
+  name: Detalhes do usuario
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3333/me
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2JyaWVsIEFtYXJhbCIsImVtYWlsIjoiZ2FhbWFyYWxAZ21haWwuY29tIiwiaWF0IjoxNzE0OTY3NDExLCJleHAiOjE3MTc1NTk0MTEsInN1YiI6IjNiZGMwYjc0LTA0ZjQtNGM4My1hNWQwLWQwNzg0MWU4ZDk0NiJ9.E6V0dDqJG6G4KMaIhhrzufLGED1IpnUVtgQWwpJj9JY
+}
